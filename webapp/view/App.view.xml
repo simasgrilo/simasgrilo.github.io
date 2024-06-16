@@ -1,0 +1,30 @@
+<mvc:View controllerName="simasgrilo.github.io.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <SplitApp id="app">
+        <masterPages>
+            <Page >
+                    <Image src="../static/photo.jpeg" height="300px" width="350px"></Image>
+                    <Panel>
+                        <Text text="Erick Simas Grilo" textAlign="End"></Text>
+                        <Text text="Application Development Team Lead @ Accenture"></Text>
+                        <Button icon="sap-icon://email" text="Email" press="onEmailPress"></Button>
+                        <Button icon="sap-icon://syntax" text="GitHub" press="onGithubPress"></Button>
+                    </Panel>
+                <content>
+                    <List id="topicsList">
+                        <ActionListItem text="Summary" press="onSummaryPress"></ActionListItem>
+                        <ActionListItem text="Skills" press="onSkillsPress"></ActionListItem>
+                        <ActionListItem text="Experience" press="onExperiencePress"></ActionListItem>
+                        <ActionListItem text="Education" press="onEducationPress"></ActionListItem>
+                        <ActionListItem text="Projects" press="onProjectsPress"></ActionListItem>
+                        <!-- init json model per controller of each view called by each of these buttons.-->
+                    </List>
+                </content>
+            </Page>
+        </masterPages>
+        <detailPages>
+        </detailPages>
+    </SplitApp>
+</mvc:View>

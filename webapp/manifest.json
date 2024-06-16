@@ -1,0 +1,171 @@
+{
+  "_version": "1.59.0",
+  "sap.app": {
+    "id": "simasgrilo.github.io",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.13.5",
+      "toolsId": "254cd67b-d119-43d2-aeb5-1456f27bdabc"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.124.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "simasgrilo.github.io.i18n.i18n"
+        }
+      },
+      "jsonModel" : {
+        "type" : "json",
+        "dataSource": "model/main.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "simasgrilo.github.io.view",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "summary",
+          "pattern": "",
+          "target": [
+            "master", "summary"
+          ]
+        },
+        {
+          "name": "skills",
+          "pattern": "skills",
+          "target" : [
+            "master", "skills"
+          ]
+        },
+        {
+          "name": "experience",
+          "pattern": "experience",
+          "target" : [
+            "master", "experience"
+          ]
+        },
+        {
+          "name": "education",
+          "pattern": "education",
+          "target" : [
+            "master", "education"
+          ]
+        },
+        {
+          "name": "projects",
+          "pattern": "projects",
+          "target" : [
+            "master", "projects"
+          ]
+        }
+      ],
+      "targets": {
+        "master": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "masterPages",
+          "viewName": "App",
+          "viewLevel": 0
+        },
+        "summary" : {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewName": "Summary",
+          "viewLevel": 1
+        },
+        "skills" : {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewName": "Skills",
+          "viewLevel": 1
+        },
+        "experience" : {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewName": "Experience",
+          "viewLevel": 1
+        },
+        "education" : {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewName": "Education",
+          "viewLevel" : 1
+        },
+        "projects" : {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewName": "Projects",
+          "viewLevel" : 1
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "simasgrilo.github.io.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

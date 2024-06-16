@@ -1,0 +1,9 @@
+<mvc:View controllerName="simasgrilo.github.io.controller.Summary"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="summary"> 
+        <HBox >
+            <Text text="Lorem Ipsum summary"></Text>
+        </HBox>
+    </Page>
+</mvc:View>
