@@ -14,11 +14,11 @@
                     </Panel>
                 <content>
                     <List id="topicsList">
-                        <ActionListItem text="Summary" press="onSummaryPress"></ActionListItem>
-                        <ActionListItem text="Skills" press="onSkillsPress"></ActionListItem>
-                        <ActionListItem text="Experience" press="onExperiencePress"></ActionListItem>
-                        <ActionListItem text="Education" press="onEducationPress"></ActionListItem>
-                        <ActionListItem text="Projects" press="onProjectsPress"></ActionListItem>
+                        <ActionListItem id="summaryItem" text="Summary" press="onSummaryPress"></ActionListItem>
+                        <ActionListItem id="skillsItem" text="Skills" press="onSkillsPress"></ActionListItem>
+                        <ActionListItem id="experienceItem" text="Experience" press="onExperiencePress"></ActionListItem>
+                        <ActionListItem id="educationItem" text="Education" press="onEducationPress"></ActionListItem>
+                        <ActionListItem id="projectsItem" text="Projects" press="onProjectsPress"></ActionListItem>
                         <!-- init json model per controller of each view called by each of these buttons.-->
                     </List>
                 </content>

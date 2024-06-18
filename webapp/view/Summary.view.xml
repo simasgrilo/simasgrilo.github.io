@@ -1,9 +1,12 @@
 <mvc:View controllerName="simasgrilo.github.io.controller.Summary"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="summary"> 
-        <HBox >
-            <Text text="Lorem Ipsum summary"></Text>
-        </HBox>
+   <Page id="summary">
+        <VBox 
+            height="100px" 
+            alignItems="Center">
+            <Title text="A Little About Me"></Title> 
+            <!-- idea: create a text control for each row in the corresponding js -->
+        </VBox>
     </Page>
 </mvc:View>
