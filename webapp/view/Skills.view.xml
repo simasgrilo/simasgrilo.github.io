@@ -1,7 +1,10 @@
-<mvc:View controllerName="simasgrilo.github.io.controller.Main"
+<mvc:View controllerName="simasgrilo.github.io.controller.Skills"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <!-- <Page id="page" title="{i18n>title}">
-        <content />
-    </Page> -->
+    <Page id="skillsPage">
+        <VBox height="100px"
+              alignItems="Center">
+              <Title text="{i18n>skillsTitle}"></Title>
+        </VBox>
+    </Page>
 </mvc:View>

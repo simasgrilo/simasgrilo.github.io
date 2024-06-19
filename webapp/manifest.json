@@ -19,6 +19,10 @@
       "summaryModel" : {
         "type" : "JSON",
         "uri": "model/summary.json"
+      },
+      "skillsModel" : {
+        "type" : "JSON",
+        "uri" : "model/skills.json"
       }
     }
   },
@@ -66,6 +70,9 @@
       },
       "summaryModel" : {
         "dataSource": "summaryModel"
+      },
+      "skillsModel" : {
+        "dataSource": "skillsModel"
       }
     },
     "resources": {
