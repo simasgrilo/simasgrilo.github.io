@@ -24,6 +24,10 @@ sap.ui.define(
             window.open("https://github.com/simasgrilo");
           },
 
+          onLinkedinPress : function() {
+            window.open("https://www.linkedin.com/in/simasgrilo/");
+          },
+
           onSummaryPress : function() {
             var oRouter = this.getOwnerComponent().getRouter();
             oRouter.navTo("summary");

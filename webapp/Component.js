@@ -5,9 +5,10 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "simasgrilo/github/io/model/models"
+        "simasgrilo/github/io/model/models",
+        "sap/ui/core/IconPool"
     ],
-    function (UIComponent, Device, models) {
+    function (UIComponent, Device, models, IconPool) {
         "use strict";
 
         return UIComponent.extend("simasgrilo.github.io.Component", {
@@ -21,6 +22,14 @@ sap.ui.define([
              * @override
              */
             init: function () {
+                //register SAP-TNT used icons:
+                IconPool.registerFont({
+                    fontFamily: "SAP-icons-TNT",
+                    collectionName : "SAP-icons-TNT",
+                    fontURI : sap.ui.require.toUrl("sap/tnt/themes/base/fonts")
+                });
+
+
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
