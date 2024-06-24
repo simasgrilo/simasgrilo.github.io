@@ -1,7 +1,12 @@
-<mvc:View controllerName="simasgrilo.github.io.controller.Main"
+<mvc:View controllerName="simasgrilo.github.io.controller.Experience"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <!-- <Page id="page" title="{i18n>title}">
-        <content />
-    </Page> -->
+    <Page id="experiencePage">
+        <content>
+            <VBox alignContent="Center">
+                <Title title="{i18n>experienceTitle}"
+                       titleStyle="H1"></Title>
+            </VBox>
+        </content>
+    </Page>
 </mvc:View>

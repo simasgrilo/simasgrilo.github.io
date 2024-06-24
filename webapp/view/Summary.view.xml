@@ -5,7 +5,7 @@
         <VBox 
             height="100px" 
             alignItems="Center">
-            <Title text="A Little About Me"></Title> 
+            <Title text="A Little About Me" titleStyle="H1"></Title> 
             <!-- idea: create a text control for each row in the corresponding js -->
         </VBox>
     </Page>

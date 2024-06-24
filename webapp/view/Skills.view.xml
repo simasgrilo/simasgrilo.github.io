@@ -4,7 +4,7 @@
     <Page id="skillsPage">
         <VBox height="100px"
               alignItems="Center">
-              <Title text="{i18n>skillsTitle}"></Title>
+              <Title text="{i18n>skillsTitle}" titleStyle="H1"></Title>
         </VBox>
     </Page>
 </mvc:View>
