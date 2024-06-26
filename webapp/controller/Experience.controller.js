@@ -15,20 +15,21 @@ sap.ui.define([
             var aData = oModel.getData()["Experience"];
             for (let oData of aData) {
                 var oPanel = new Panel({
-                    headerText: oData["JobDescription"] + " @ "  + oData["Company"] + "\t" + oData["TimeFrame"],
+                    headerText: oData["JobDescription"] + " @ "  + oData["Company"] + "\t\t\t\t" + oData["TimeFrame"],
                     expandable: true
                 });
                 //var sContent = "".join(oData["Activities"]);
-                var sContent = "";
                 oData["Activities"].forEach(element => {
-                    sContent += element + "\n";
+                    let sContent = element + "\n";
+                    let oText = new Text({
+                        text : sContent,
+                        renderWhitespace: true
+                    });
+                    oText.addStyleClass("bullet-list");
+                    oPanel.addContent(oText);
                 });
-                var oText = new Text({
-                    text : sContent,
-                    renderWhitespace: true
-                });
-                oText.addStyleClass("bullet-list");
-                oPanel.addContent(oText);
+                //oText.addStyleClass("bullet-list");
+                //oPanel.addContent(oText);
                 oPage.addContent(oPanel);
             }
 

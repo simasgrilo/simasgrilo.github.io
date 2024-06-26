@@ -14,20 +14,26 @@
                         "JobDescription": "Application Development Senior Analyst",
                         "Company": "Accenture do Brasil",
                         "TimeFrame": "May 2021 - December 2022",
-                        "Activities" : [ "1",
-                                         "2" ]
+                        "Activities" : [ "Worked in the development of a program to generate boletos with PDF (Adobe Forms) printing based on AR documents created from Sales order process following the CNAB 400 standard",
+                                         "Configured the whole maintenance process in PM Module (from initial design of master data until maintenance order costing) and developed Z programs to support client requirements. I was the implementation focal point of lots of programs regarding migration data (custom programs, Migration Cockpit and LSMW).",
+                                         "Developed a Python-based integration between IoT devices with SAP IAM (now SAP APM) using MQTT with SAP BTP as a PoC for client prospecting" ]
                     },
                     {
                         "JobDescription": "Application Development Analyst",
                         "Company": "Accenture do Brasil",
                         "TimeFrame": "February 2020 - May 2021",
-                        "Activities" : []
+                        "Activities" : ["Worked mainly as a SAP MM/PM functional consultant, besides working with data conversion (developing data extraction and data cleansing routines of data from legacy systems) for SAP rollouts using LSMW and custom programs. Debugging of custom and standard programs. Design, development, documentation and testing of functionalities in a SAP solution delivered for big players in Oil & Gas and mining industries"]
                     },
                     {
                         "JobDescription": "Software Engineering Intern",
                         "Company": "BNDES",
                         "TimeFrame": "March 2018 - July 2019",
-                        "Activities" : []
+                        "Activities" : ["Requirements engineering of software systems and development of SQL queries in Microsfot SQL Server (T-SQL) for a digital Kanban of the team that I worked with",
+                                        "Developed key banking products like ``Liberação de crédito não orçamentária´´ to allow loans of magnitudes of 800M BRL, SAPUI5 apps hosted on Fiori Launchpad for intelligent management of the lifecycle of TRM products like Securities and Money Market documents",
+                                        "Developed RESTful APIs based in the SAP Gateway (SEGW) for the aforementioned SAPUI5 apps and other internal systems, allowing the integration with important initiatives like Fundo Amazônia",
+                                        "Developed a variety of integrations with the Brazilian Payment System (SPB) controlled by The Central Bank of Brazil for sending / receiving the STR messaging: STR0007/R1/R2, STR0008/R1/R2, STR0029/R1/R2, using SAP PI and SPROXY methods implementation in ECC backend.",
+                                         "Developed a feature to enable the financial business team to end physical paper usage in securities transactions in FTR_CREATE by adding the attachment functionality upon creating the documents via SAP Screen Personas"
+                                       ]
                     }
                    ]
 }
