@@ -1,0 +1,33 @@
+{
+    "Experience" : [{
+                        "JobDescription": "Application Development Team Lead",
+                        "Company": "Accenture do Brasil",
+                        "TimeFrame": "December 2022 - Current",
+                        "Activities" : [ {"Text": "Developer with emphasis in SAP PM/CO modules. Responsible for requirements engineering, functional / technical specification of custom developments (RICEFWs), coding, debugging, testing and deploy. Focal point of my technical team in Brazil and the Global IT leads of customers I am working with, detailing business requirements, discussing technical aspects of developments, and code reviews to guarantee the solution quality of the global platform in CAB meetings."},
+                                         {"Text" :"Developed an integration based in CDS views and RESTful services based on SAP PI connectors to allow that documents from the accounts receivable (AR) department could be integrated in a third party company responsible to manage the receivables, allowing cash flow anticipation of up to 100MM BRL."},
+                                         {"Text": "Developed a Python-based integration to send batch data to multiple servers to manage asset maintenance in SAP APM, registering IoT sensors measures installed in equipment that are part of the factory process (presented in SAP SAPPHIRE 2023). I also have developed integration scenarios based in Node-RED with APM and AVEVA OSI PI to solve requirements for an intelligent asset maintenance scenario for client prospecting."},
+                                         {"Text": "Focal point in bug solving in SAP Standard code, both debugging alone and guiding debugging sessions with SAP Personnel to show the root cause, which resulted in bugfixes delivered by SAP (Notes 3354984, 3210071 and 3269197)"},
+                                         {"Text": "Led ABAP training sessions for techincal and non-technical consultants"}
+                                       ]
+                    },
+                    {
+                        "JobDescription": "Application Development Senior Analyst",
+                        "Company": "Accenture do Brasil",
+                        "TimeFrame": "May 2021 - December 2022",
+                        "Activities" : [{"Text": "1"},
+                                        {"Text": "2"}]
+                    },
+                    {
+                        "JobDescription": "Application Development Analyst",
+                        "Company": "Accenture do Brasil",
+                        "TimeFrame": "February 2020 - May 2021",
+                        "Activities" : []
+                    },
+                    {
+                        "JobDescription": "Software Engineering Intern",
+                        "Company": "BNDES",
+                        "TimeFrame": "March 2018 - July 2019",
+                        "Activities" : []
+                    }
+                   ]
+}

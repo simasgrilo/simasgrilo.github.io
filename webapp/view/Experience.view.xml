@@ -3,10 +3,42 @@
     xmlns="sap.m">
     <Page id="experiencePage">
         <content>
-            <VBox alignContent="Center">
-                <Title title="{i18n>experienceTitle}"
-                       titleStyle="H1"></Title>
+            <VBox alignItems="Center"
+                  height="100px">
+                <Title text="{i18n>experienceTitle}"
+                       titleStyle="H2">
+                </Title>
+                       <!-- modelName>modelProperty for when you have multiple models -->
             </VBox>
+            <!-- <List id="experienceList" items="{path : 'experienceModel>/Experience'}" backgroundDesign="Transparent">
+                <CustomListItem>
+                    <Panel headerText="{experienceModel>JobDescription} @ {experienceModel>Company} ----- {experienceModel>TimeFrame}"
+                           expandable="true" width="100%">
+                           <List id="experienceSubList" items="{path: 'experienceModel>Activities' , templateShareable: true}">
+                                <DisplayListItem value="{experienceModel>Text}">
+                                    
+                                </DisplayListItem>
+                           </List>
+                    </Panel>
+                </CustomListItem>
+            </List> 25/06/2024 -> doesn't work for multiple views. And the nested list is odd.-->
+            <!-- <List id="experienceList" items="{path : 'experienceModel>/Experience'}" backgroundDesign="Transparent">
+                works good if there's no nested list.
+                <CustomListItem>
+                    <VBox>
+                        <HBox alignItems="Center" justifyContent="SpaceBetween">
+                            <Title text="{experienceModel>JobDescription}"></Title>
+                            <Title text="{experienceModel>Company}"></Title>
+                            <Title text="{experienceModel>TimeFrame}"></Title>
+                        </HBox>
+                         <Text text="{experienceModel>Activities}"></Text> -->
+                        <!-- <List items="{experienceModel>Activity}">
+                            <CustomListItem  ></CustomListItem>
+                        </List>  -->
+                        <!--is nested list the best approach? 
+                    </VBox>
+                </CustomListItem> 
+            </List> -->
         </content>
     </Page>
 </mvc:View>
