@@ -11,18 +11,6 @@
                        <!-- modelName>modelProperty for when you have multiple models -->
             </VBox>
             <!-- <List id="experienceList" items="{path : 'experienceModel>/Experience'}" backgroundDesign="Transparent">
-                <CustomListItem>
-                    <Panel headerText="{experienceModel>JobDescription} @ {experienceModel>Company} ----- {experienceModel>TimeFrame}"
-                           expandable="true" width="100%">
-                           <List id="experienceSubList" items="{path: 'experienceModel>Activities' , templateShareable: true}">
-                                <DisplayListItem value="{experienceModel>Text}">
-                                    
-                                </DisplayListItem>
-                           </List>
-                    </Panel>
-                </CustomListItem>
-            </List> 25/06/2024 -> doesn't work for multiple views. And the nested list is odd.-->
-            <!-- <List id="experienceList" items="{path : 'experienceModel>/Experience'}" backgroundDesign="Transparent">
                 works good if there's no nested list.
                 <CustomListItem>
                     <VBox>
@@ -31,14 +19,29 @@
                             <Title text="{experienceModel>Company}"></Title>
                             <Title text="{experienceModel>TimeFrame}"></Title>
                         </HBox>
-                         <Text text="{experienceModel>Activities}"></Text> -->
-                        <!-- <List items="{experienceModel>Activity}">
+                         <Text text="{experienceModel>Activities}"></Text> 
+                      List items="{experienceModel>Activity}">
                             <CustomListItem  ></CustomListItem>
-                        </List>  -->
-                        <!--is nested list the best approach? 
+                        </List>
+                        is nested list the best approach? -
                     </VBox>
                 </CustomListItem> 
             </List> -->
         </content>
     </Page>
 </mvc:View>
+
+
+            <!-- <List id="experienceList" items="{path : 'experienceModel>/Experience'}" backgroundDesign="Transparent">
+                <CustomListItem>
+                    <Panel headerText="{experienceModel>JobDescription} @ {experienceModel>Company} {experienceModel>TimeFrame}"
+                           expandable="true" width="100%">
+                           <List id="experienceSubList" items="{path: 'experienceModel>Activities' , templateShareable: true}">
+                                <DisplayListItem value="{experienceModel>Text}">
+                                    
+                                </DisplayListItem>
+                           </List>
+                    </Panel>
+                </CustomListItem>
+            </List> -->
+            <!--25/06/2024 -> doesn't work for multiple views. And nested list wasn't that beautiful. this was right below the HBox at the main page-->
