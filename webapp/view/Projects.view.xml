@@ -1,7 +1,14 @@
-<mvc:View controllerName="simasgrilo.github.io.controller.Main"
+<mvc:View controllerName="simasgrilo.github.io.controller.Projects"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <!-- <Page id="page" title="{i18n>title}">
-        <content />
-    </Page> -->
+    <Page id="projects">
+        <content>
+            <VBox alignItems="Center">
+                <Title text="{i18n>projectsTitle}" 
+                       titleStyle="H2">
+                </Title>
+                <Text text="{i18n>projectsSubTitle}"></Text>
+            </VBox>
+        </content>
+    </Page>
 </mvc:View>

@@ -27,6 +27,10 @@
       "experienceModel" : {
         "type": "JSON",
         "uri" : "model/experience.json"
+      },
+      "projectsModel" : {
+        "type": "JSON",
+        "uri" : "model/projects.json"
       }
     }
   },
@@ -80,6 +84,9 @@
       },
       "experienceModel" : {
         "dataSource": "experienceModel"
+      },
+      "projectsModel" : {
+        "dataSource": "projectsModel"
       }
     },
     "resources": {

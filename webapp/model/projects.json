@@ -1,0 +1,39 @@
+{ 
+    "Experience" : [{
+        
+                "Title": "ReLo: a Dynamic Logic to Reason About Reo Circuits.",
+                "PublishedAt": "Electronic Proceedings in Theoretical Computer Science",
+                "Year": "2023",
+                "Description" : [ "Development of a Dynamic logic called ReLo to reason over Reo models and its implementation in Coq Proof Assitant",
+                                "An extension of my Master's work concluded in 2021."
+                                ],
+                            
+                "Repository" : "https://github.com/frame-lab/ReoLogicCoq"
+            },
+            {
+                "Title": "A logical framework to reason about Reo circuits",
+                "PublishedAt": "Ifcolog Journal Of Logics And Their Applications",
+                "Year": "2023",
+                "Description" : ["Worked in the development of a Node.js based app to enable reasoning over Reo Circuits using Constraint Automata as the underlying formalism.",
+                                 "The same framework also contains reasoning user models in nuxmv, and a code generator to create models from a simplified version of Treo to Coq code"
+                                ],
+                "Repository" : "https://github.com/frame-lab/ReoXplore"
+            },
+            {
+                "Title": "International Conference on Systems, Signals and Image Processing",
+                "PublishedAt": "Ifcolog Journal Of Logics And Their Applications",
+                "Year": "2020",
+                "Description" : ["Development of a Constraint Automata-based framework to validate properties in Reo models denoted by Constraint Automata in the context of smart entities in smart cities"
+                                ],
+                "Repository" : "https://github.com/frame-lab/CACoq/"
+            },
+            {
+                "Title": "Critical systems for Smart Cities: towards certifying software",
+                "PublishedAt": "Smart and Digital Cities. 1ed.: Springer",
+                "Year": "2019",
+                "Description" : ["Development of a Finite Automata-based framework to validate properties in Smart Cities entities' interaction models modelled in a specific Smart Cities framework to guarantee that desired behaviours are captured in the model."
+                                ],
+                "Repository" : "https://github.com/frame-lab/RGCoq"
+            }
+        ]
+}
