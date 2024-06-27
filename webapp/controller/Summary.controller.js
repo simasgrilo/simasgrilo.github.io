@@ -1,9 +1,10 @@
 sap.ui.define(
 	[
 		"sap/ui/core/mvc/Controller",
-		"sap/m/Text"
+		"sap/m/Text",
+		"sap/m/FlexBox"
 	],
-	function (BaseController, Text) {
+	function (BaseController, Text, FlexBox) {
 		"use strict";
 
 		return BaseController.extend("com.simasgrilo.homepage.homepageui5.controller.Summary", {
@@ -12,6 +13,11 @@ sap.ui.define(
 				const aJson = oModel["oData"]["summary"];
 				const oView = this.getView().byId("summary");
 				var sContent = "";
+				const oFlexBox = new FlexBox("summaryFb", {
+					alignItems: "Start",
+					height: "500px",
+					justifyContent: "Center"
+				});
 				for (let sText of aJson) {
 					sContent += sText + '\n\n'
 
@@ -21,10 +27,9 @@ sap.ui.define(
 					renderWhitespace : true,
 					wrapping: true
 				});
-				oView.addContent(oText);
-				// aJson.forEach(function(elem) {
-				// 	this._appendDOM(elem, oArea);
-				// });
+				
+				oFlexBox.addItem(oText);
+				oView.addContent(oFlexBox);
 			},
 
 
