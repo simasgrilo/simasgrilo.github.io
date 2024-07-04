@@ -3,9 +3,10 @@ sap.ui.define([
     "sap/m/Panel",
     "sap/m/Text",
     "sap/m/Label",
-    "sap/m/VBox"
+    "sap/m/VBox",
+    "sap/m/Link"
 
-], function(Controller, Panel, Text, Label, VBox){
+], function(Controller, Panel, Text, Label, VBox, Link){
     "use strict";
     return Controller.extend("simasgrilo.github.io.controller.Projects", {
         onInit : function(){
@@ -58,6 +59,21 @@ sap.ui.define([
                     oDesc.addStyleClass("bullet-list");
                     oPanel.addContent(oDesc);
                 });
+
+
+                let oLinkVbox = new VBox({});
+                //repository links
+                let oRepoLabel = new Label({
+                    text: oBundle.getText("repoLabel")
+                });
+                oRepoLabel.addStyleClass("sapUiSmallMarginEnd");
+                let oRepoLink = new Link({
+                    text : oData["Repository"],
+                    href : oData["Repository"]
+                });
+                oLinkVbox.addItem(oRepoLabel).addItem(oRepoLink);
+                oPanel.addContent(oLinkVbox);
+                
                 oPage.addContent(oPanel);
 
             }

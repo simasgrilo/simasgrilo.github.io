@@ -8,6 +8,10 @@
                        titleStyle="H2">
                 </Title>
                 <Text text="{i18n>projectsSubTitle}"></Text>
+                <HBox >
+                    <Label text="{i18n>linkLabel}" class="sapUiTinyMarginBottom sapUiTinyMarginEnd"></Label>
+                    <Link text="Lattes" href="https://buscatextual.cnpq.br/buscatextual/cv?id=1599662706989254"></Link>
+                </HBox>
             </VBox>
         </content>
     </Page>
