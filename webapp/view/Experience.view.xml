@@ -1,7 +1,7 @@
 <mvc:View controllerName="simasgrilo.github.io.controller.Experience"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="experiencePage">
+    <Page id="experiencePage" showNavButton="{device>/system/phone}" navButtonPress="onNavPress">
         <content>
             <VBox alignItems="Center"
                   height="100px">

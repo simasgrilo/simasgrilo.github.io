@@ -1,7 +1,7 @@
 <mvc:View controllerName="simasgrilo.github.io.controller.Summary"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-   <Page id="summary">
+   <Page id="summary" showNavButton="{device>/system/phone}" navButtonPress="onNavPress">
         <VBox 
             height="100px" 
             alignItems="Center">

@@ -1,7 +1,7 @@
 <mvc:View controllerName="simasgrilo.github.io.controller.Skills"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="skillsPage">
+    <Page id="skillsPage" showNavButton="{device>/system/phone}" navButtonPress="onNavPress">
         <VBox height="100px"
               alignItems="Center">
               <Title text="{i18n>skillsTitle}" titleStyle="H2"></Title>

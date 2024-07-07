@@ -20,6 +20,12 @@ sap.ui.define([
                 wrapping: true
             });
             oPage.addContent(oText);
+        },
+
+        onNavPress : function() {
+            let oApp = this.getView().getParent().getParent();
+            let oMasterPage = oApp.getMasterPages()[0];
+            oApp.toMaster(oMasterPage,"slide");
         }
 
     });

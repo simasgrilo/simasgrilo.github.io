@@ -77,6 +77,12 @@ sap.ui.define([
                 oPage.addContent(oPanel);
 
             }
+            
+        },
+        onNavPress : function() {
+            let oApp = this.getView().getParent().getParent();
+            let oMasterPage = oApp.getMasterPages()[0];
+            oApp.toMaster(oMasterPage,"slide");
         }
     });
 

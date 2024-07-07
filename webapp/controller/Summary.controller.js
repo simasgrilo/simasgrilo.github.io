@@ -35,6 +35,12 @@ sap.ui.define(
 
 			onClickMe : function () {
 				console.log(this.getView().getModel("summaryModel"));
+			},
+
+			onNavPress : function() {
+				let oApp = this.getView().getParent().getParent();
+				let oMasterPage = oApp.getMasterPages()[0];
+				oApp.toMaster(oMasterPage,"slide");
 			}
 
 		});
