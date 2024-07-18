@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/Device","simasgrilo/github/io/model/models","sap/ui/core/IconPool"],function(e,i,t,o){"use strict";return e.extend("simasgrilo.github.io.Component",{metadata:{manifest:"json"},init:function(){o.registerFont({fontFamily:"SAP-icons-TNT",collectionName:"SAP-icons-TNT",fontURI:sap.ui.require.toUrl("sap/tnt/themes/base/fonts")});e.prototype.init.apply(this,arguments);this.getRouter().initialize();this.setModel(t.createDeviceModel(),"device")}})});
+//# sourceMappingURL=Component.js.map

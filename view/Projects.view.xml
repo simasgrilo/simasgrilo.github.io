@@ -1,0 +1,18 @@
+<mvc:View controllerName="simasgrilo.github.io.controller.Projects"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="projects">
+        <content>
+            <VBox alignItems="Center">
+                <Title text="{i18n>projectsTitle}" 
+                       titleStyle="H2">
+                </Title>
+                <Text text="{i18n>projectsSubTitle}"></Text>
+                <HBox >
+                    <Label text="{i18n>linkLabel}" class="sapUiTinyMarginBottom sapUiTinyMarginEnd"></Label>
+                    <Link text="Lattes" href="https://buscatextual.cnpq.br/buscatextual/cv?id=1599662706989254"></Link>
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
