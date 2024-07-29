@@ -20,6 +20,10 @@
         "type" : "JSON",
         "uri": "model/summary.json"
       },
+      "educationModel" : {
+        "type": "JSON",
+        "uri": "model/education.json"
+      },
       "skillsModel" : {
         "type" : "JSON",
         "uri" : "model/skills.json"
@@ -87,6 +91,9 @@
       },
       "projectsModel" : {
         "dataSource": "projectsModel"
+      },
+      "educationModel": {
+        "dataSource": "educationModel"
       }
     },
     "resources": {

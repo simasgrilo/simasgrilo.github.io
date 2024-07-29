@@ -1,0 +1,18 @@
+{
+    "Education" : [
+        {
+            "Title": "M.Sc. in Computer Science",
+            "University": "Universidade Federal Fluminense",
+            "Work": "ReLo: a dynamic logic to reason about Reo circuits",
+            "Year": "2021",
+            "Paper" : "https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1019.pdf&tipo=trabalho"
+        },
+        {
+            "Title": "B.Sc. in Computer Science",
+            "University": "Universidade Federal Fluminense",
+            "Work": "Compiling Certified Reo Code",
+            "Year": "2018",
+            "Paper" : "../static/TCCErickGrilo.pdf"
+        }
+    ]
+}
