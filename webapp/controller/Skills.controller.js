@@ -19,6 +19,7 @@ sap.ui.define([
                 renderWhitespace : true,
                 wrapping: true
             });
+            oText.addStyleClass("sapUiSmallMarginBeginEnd");
             oPage.addContent(oText);
         },
 

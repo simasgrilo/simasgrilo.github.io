@@ -27,7 +27,7 @@ sap.ui.define(
 					renderWhitespace : true,
 					wrapping: true
 				});
-				
+				oText.addStyleClass("sapUiSmallMarginBeginEnd");
 				oFlexBox.addItem(oText);
 				oView.addContent(oFlexBox);
 			},
