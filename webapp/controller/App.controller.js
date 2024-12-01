@@ -11,7 +11,7 @@ sap.ui.define(
           onInit: function() {
             const oModel = new JSONModel();
 
-            fetch('./model/summary.json');
+           // fetch('./model/summary.json');
             
 
           },

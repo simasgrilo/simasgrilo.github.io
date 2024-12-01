@@ -2,13 +2,14 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/Text",
     "sap/m/FlexBox",
-    "sap/m/VBox",
+    "sap/m/HBox",
     "sap/m/Title",
     "sap/m/Panel",
     "sap/m/FormattedText",
-    "sap/m/Toolbar"
+    "sap/m/Toolbar",
+    "sap/m/ToolbarSpacer"
     
-], function(Controller, Text, FlexBox, VBox, Title, Panel, FormattedText, Toolbar){
+], function(Controller, Text, FlexBox, HBox, Title, Panel, FormattedText, Toolbar, ToolbarSpacer){
     "use strict";
     return Controller.extend("simasgrilo.github.io.controller.Experience", {
         onInit : function() {
@@ -16,6 +17,7 @@ sap.ui.define([
             let oModel = this.getOwnerComponent().getModel("experienceModel");
             let aData = oModel.getData()["Experience"];
             let that = this;
+            let oPanelVBox = this.getView().byId("panelVbox");
             for (let oData of aData) {
                 let oJobText = new Text({
                     text: oData["JobDescription"] + " @ "  + oData["Company"]
@@ -23,24 +25,14 @@ sap.ui.define([
                 let oJobTimeframeText = new Text({ 
                     text: oData["TimeFrame"]
                 });
+                //oJobTimeframeText.addStyleClass("sapUiSmallMarginBegin")
                 let oPanelToolbar = new Toolbar({
                     active: true,
                     press: that.onToolbarClick
                 });
-                let oFlexBox = new FlexBox({
-                    justifyContent : sap.m.FlexJustifyContent.SpaceAround,
-                    alignItems: sap.m.FlexAlignItems.Center
-                });
-                oFlexBox.addItem(oJobText);
-                oFlexBox.addStyleClass("sapUiLargeMarginEnd");
-                let oOtherBox = new FlexBox({
-                    justifyContent : sap.m.FlexJustifyContent.SpaceAround,
-                    alignItems: sap.m.FlexAlignItems.Center
-                });
-                oOtherBox.addStyleClass("sapUiLargeMarginBegin");
-                oOtherBox.addItem(oJobTimeframeText);
-                oPanelToolbar.addContent(oFlexBox);
-                oPanelToolbar.addContent(oOtherBox);
+                oPanelToolbar.addContent(oJobText);
+                oPanelToolbar.addContent(new ToolbarSpacer());
+                oPanelToolbar.addContent(oJobTimeframeText);
                 //changed text aggregation content from plain string to the headerToolbar to allow custom spacing between the information in the panel header.
                 let oPanel = new Panel({
                     //headerText: oPanelText.getHtmlText(),
@@ -57,10 +49,10 @@ sap.ui.define([
                     oText.addStyleClass("bullet-list");
                     oPanel.addContent(oText);
                 });
-                //oText.addStyleClass("bullet-list");
-                //oPanel.addContent(oText);
-                oPage.addContent(oPanel);
+                oPanelVBox.addItem(oPanel);
             }
+            oPage.addContent(oPanelVBox);
+            
         },
 
         onNavPress : function() {
