@@ -32,16 +32,15 @@ sap.ui.define([
                     let oLabel = new Label({
                         text: oBundle.getText(key)
                     });
-                    oLabel.addStyleClass("sapUiSmallTinyBottom");
                     let oText = new Text({
                         text: oData[key]
                     });
-                    oText.addStyleClass("sapUiSmallTinyBottom");
+                    oText.addStyleClass("sapUiTinyMarginBottom");
                     oVbox.addItem(oLabel).addItem(oText);
                 }
                 //add Paper as a hyperlink:
                 let oLabel = new Label({
-                    text: oBundle.getText("Work")
+                    text: oBundle.getText("Paper")
                 });
                 let oLink = new Link({
                     href: oData["Paper"],
@@ -51,9 +50,6 @@ sap.ui.define([
                 oPanel.addContent(oVbox);
                 oPage.addContent(oPanel);
             }
-
         }
-
     });
-
 })
