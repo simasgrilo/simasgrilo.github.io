@@ -5,7 +5,7 @@
         <content>
             <VBox alignItems="Center">
                 <Title text="{i18n>projectsTitle}" 
-                       titleStyle="H2">
+                       titleStyle="H2" class="sapUiTinyMarginTop">
                 </Title>
                 <Text text="{i18n>projectsSubTitle}"></Text>
                 <HBox >

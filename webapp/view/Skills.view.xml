@@ -4,7 +4,7 @@
     <Page id="skillsPage" showNavButton="{device>/system/phone}" navButtonPress="onNavPress">
         <VBox height="100px"
               alignItems="Center">
-              <Title text="{i18n>skillsTitle}" titleStyle="H2"></Title>
+              <Title text="{i18n>skillsTitle}" titleStyle="H2" class="sapUiTinyMarginTop"></Title>
         </VBox>
     </Page>
 </mvc:View>

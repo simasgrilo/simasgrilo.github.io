@@ -6,7 +6,7 @@
             <VBox alignItems="Center"
                   height="100px">
                 <Title text="{i18n>experienceTitle}"
-                       titleStyle="H2">
+                       titleStyle="H2" class="sapUiTinyMarginTop">
                 </Title>
                        <!-- modelName>modelProperty for when you have multiple models -->
             </VBox>

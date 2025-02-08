@@ -28,22 +28,22 @@ sap.ui.define([
                     text : oBundle.getText("publishedAt")
 
                 });
-                oLabel.addStyleClass("sapUiSmallMarginEnd");
+                //oLabel.addStyleClass("sapUiSmallMarginTop");
                 let oText = new Text({
                     text : oData["PublishedAt"]
                 });
-                oText.addStyleClass("sapUiSmallMarginEnd");
+                oText.addStyleClass("sapUiTinyMarginBottom");
                 oVbox.addItem(oLabel).addItem(oText);
 
                 //content
                 oLabel = new Label({
                     text: oBundle.getText("year")
                 });
-                oLabel.addStyleClass("sapUiSmallMarginEnd");
+                //oLabel.addStyleClass("sapUiSmallMarginEnd");
                 oText = new Text({
                     text : oData["Year"]
                 });
-                oText.addStyleClass("sapUiSmallMarginEnd");
+                oText.addStyleClass("sapUiTinyMarginBottom");
                 oVbox.addItem(oLabel).addItem(oText);
                 //for description
                 oLabel = new Label({
@@ -59,6 +59,8 @@ sap.ui.define([
                     oDesc.addStyleClass("bullet-list");
                     oPanel.addContent(oDesc);
                 });
+                //add margin to the last element of the bullet list
+                oPanel.getContent()[oPanel.getContent().length - 1].addStyleClass("sapUiTinyMarginBottom");
 
 
                 let oLinkVbox = new VBox({});
@@ -73,9 +75,7 @@ sap.ui.define([
                 });
                 oLinkVbox.addItem(oRepoLabel).addItem(oRepoLink);
                 oPanel.addContent(oLinkVbox);
-                
                 oPage.addContent(oPanel);
-
             }
             
         },
