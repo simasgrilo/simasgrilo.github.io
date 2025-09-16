@@ -1,8 +1,19 @@
 {
     "Experience" : [{
+                        "JobDescription": "Senior Software Architect",
+                        "Company": "UX Innovation",
+                        "TimeFrame": "May 2025 - Current",
+                        "Activities" : [   
+                                            "Responsible for design, develop and maintenance of solutions mainly in the ABAP stack (SAPUI5, ABAP, JavaScript and many services provided by BTP) for worldwide customers",
+                                            "Responsible for design and architecture of integrations between many different customer systems, ensuring that they are scalable, maintainable, and interoperable",
+                                            "Leading a team of developers, providing technical guidance and ensuring that best practices are followed",
+                                            "Working closely with product owners and other stakeholders of clients to ensure that the solution meets business requirements and is delivered on time"
+                                       ]
+                    },
+                    {
                         "JobDescription": "Application Development Team Lead",
                         "Company": "Accenture do Brasil",
-                        "TimeFrame": "December 2022 - Current",
+                        "TimeFrame": "December 2022 - May 2025",
                         "Activities" : [   "Developer with emphasis in SAP PM/CO modules. Responsible for requirements engineering, functional / technical specification of custom developments (RICEFWs), coding, debugging, testing and deploy. Focal point of my technical team in Brazil and the Global IT leads of customers I am working with, detailing business requirements, discussing technical aspects of developments, and code reviews to guarantee the solution quality of the global platform in CAB meetings.",
                                            "Developed an integration based in CDS views and RESTful services based on SAP PI connectors to allow that documents from the accounts receivable (AR) department could be integrated in a third party company responsible to manage the receivables, allowing cash flow anticipation of up to 100MM BRL."  ,
                                            "Developed a Python-based integration to send batch data to multiple servers to manage asset maintenance in SAP APM, registering IoT sensors measures installed in equipment that are part of the factory process (presented in SAP SAPPHIRE 2023). I also have developed integration scenarios based in Node-RED with APM and AVEVA OSI PI to solve requirements for an intelligent asset maintenance scenario for client prospecting."  ,

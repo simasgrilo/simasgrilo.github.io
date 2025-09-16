@@ -9,7 +9,7 @@
                     <HBox >
                     <Panel >
                         <Text text="Erick Simas Grilo" textAlign="End"></Text>
-                        <Text text="Application Development Team Lead @ Accenture"></Text>
+                        <Text text="Senior Software Architect @ UX Innovation"></Text>
                         <Button icon="sap-icon://email" text="Email" press="onEmailPress"></Button>
                         <Button icon="sap-icon://SAP-icons-TNT/github" text="GitHub" press="onGithubPress"></Button>
                         <Button icon="sap-icon://SAP-icons-TNT/user" text="LinkedIn" press="onLinkedinPress"></Button>
