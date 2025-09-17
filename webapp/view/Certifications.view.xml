@@ -1,0 +1,10 @@
+<mvc:View controllerName="simasgrilo.github.io.controller.Certifications"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="certificationsPage" showNavButton="{device>/system/phone}" navButtonPress="onNavPress">
+        <VBox height="100px"
+              alignItems="Center">
+              <Title text="{i18n>certifications}" titleStyle="H2" class="sapUiTinyMarginTop"></Title>
+        </VBox>
+    </Page>
+</mvc:View>
