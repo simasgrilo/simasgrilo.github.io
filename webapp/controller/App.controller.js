@@ -51,6 +51,11 @@ sap.ui.define(
           onProjectsPress: function(){
             var oRouter = this.getOwnerComponent().getRouter();
             oRouter.navTo("projects");
+          },
+
+          onCertificationsPress: function(){
+            var oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("certifications");
           }
       });
     }

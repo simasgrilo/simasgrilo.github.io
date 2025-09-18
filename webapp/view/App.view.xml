@@ -22,6 +22,7 @@
                         <ActionListItem id="experienceItem" text="Experience" press="onExperiencePress"></ActionListItem>
                         <ActionListItem id="educationItem" text="Education" press="onEducationPress"></ActionListItem>
                         <ActionListItem id="projectsItem" text="Projects" press="onProjectsPress"></ActionListItem>
+                        <ActionListItem id="certificationsItem" text="Certifications" press="onCertificationsPress"></ActionListItem>
                         <!-- init json model per controller of each view called by each of these buttons.-->
                     </List>
                 </content>

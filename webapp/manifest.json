@@ -35,6 +35,10 @@
       "projectsModel" : {
         "type": "JSON",
         "uri" : "model/projects.json"
+      },
+      "certsModel" : {
+        "type": "JSON",
+        "uri" : "model/certifications.json"
       }
     }
   },
@@ -94,6 +98,9 @@
       },
       "educationModel": {
         "dataSource": "educationModel"
+      },
+      "certsModel": {
+        "dataSource": "certsModel"
       }
     },
     "resources": {
@@ -147,6 +154,13 @@
           "target" : [
             "master", "projects"
           ]
+        },
+        {
+          "name": "certifications",
+          "pattern": "certifications",
+          "target" : [
+            "master", "certifications"
+          ]
         }
       ],
       "targets": {
@@ -191,6 +205,13 @@
           "controlAggregation": "detailPages",
           "viewName": "Projects",
           "viewLevel" : 1
+        },
+        "certifications": {
+          "viewType": "XML",
+          "transition": "slide",
+          "controlAggregation": "detailPages",
+          "viewName": "Certifications",
+          "viewLevel": 1
         }
       }
     },
